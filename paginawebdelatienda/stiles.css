@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+:root{
+    --background: linear-gradient(135deg,#667eea7e 0%, #764ba298 100%);
+    --color-primary:#667eea;
+    --color-secondary:#764ba2;
+    --boton-padding:20px 40px;
+}
+
+body{
+    background-color:#000 ;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+.subtitle{
+    font-family: 'Dancing Script', cursive;
+    color: red;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+.hero{
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1611006831698-40b37cd6dc0f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+.hero .container{
+    padding: 0;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+     height: 70px;
+     align-items: center;
+     font-weight: 700;
+}
+.nav__items{
+    color: #fff;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+    text-decoration: none;
+}
+.nav__items--cta{
+    border: 1px solid #fff;
+}
+.hero__cabecera{
+    display: flex;
+    height: calc(100vh - 90px);
+}
+.hero__txt{
+    width: 80%;
+    margin-bottom: 50%;
+    color: #fff;
+}
+.hero__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+    color: #fff;
+}
+.hero__cta{
+    display: inline-block;
+    background-color: red;
+    padding: var(--boton-padding);
+    color:#fff;
+    border-radius: 40px;
+    text-decoration: none;
+}
+.hero__title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.rem;
+    color: #fff;
+}
+.hero__wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+/*seccion de about*/
+.presentacion{
+    text-align: center;
+    padding-top: 0;
+    color: #fff;
+}
+.presentacion__pinture{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   margin-bottom: 10px;
+   object-fit: cover;
+   object-position: top;
+}
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+.presentacion__cta{
+    display: inline-block;
+    margin-top: 30px;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    padding: var(--boton-padding);
+    border-radius: 40px;
+}
+/*css grid*/
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.about__img{
+    text-align: center;
+}
+.about__img--left{
+    text-align: center;
+}
+.about__pinture{
+    max-width: 90%;
+}
+.about__parrafo{
+    margin-bottom: 20px;
+    line-break: 1.5;
+    font-weight: 300;
+    color: #fff;
+}
+/*testionio*/
+.testimony__grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.testimony__item{
+    width: 90%;
+    margin: 0 auto;
+    background-color: red;
+    box-shadow: #000;
+    border-radius: 10px;
+    padding: 30px 25px;
+    color:#000;
+    margin-bottom: 50px;
+}
+.testimony__person{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.testimony__img{
+    width: 100%;
+    min-width: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 3px solid #000;
+    margin-right: 30px;
+}
+.testimony__name{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.testyony__review{
+    font-weight: 300;
+    
+}
